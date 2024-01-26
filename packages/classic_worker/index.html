@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classic Worker</title>
+</head>
+<body>
+    <h1>Fibonacci</h1>
+    <button onclick="bindClickEvt(10)">10</button>
+    <button onclick="bindClickEvt(20)">20</button>
+    <button onclick="bindClickEvt(30)">30</button>
+    <button onclick="bindClickEvt(40)">40</button>
+    <button onclick="bindClickEvt(50)">50</button>
+    <div style="margin-top: 12px;">
+        Result: <span id="calu-wrapper"></span>
+    </div>
+    <script type="module" src="./src/main_thread.ts"></script>
+</body>
+</html>
