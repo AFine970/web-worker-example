@@ -2,9 +2,9 @@
   "name": "web-worker-example",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "pnpm -r build",
+    "preview": "pnpm -r preview"
   },
   "keywords": [],
   "author": "",
@@ -13,5 +13,9 @@
     "@types/node": "^20.11.6",
     "typescript": "^5.3.3",
     "vite": "^5.0.12"
+  },
+  "engines": {
+    "pnpm": ">=8",
+    "node": ">=16"
   }
 }
