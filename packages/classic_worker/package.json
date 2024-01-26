@@ -6,7 +6,7 @@
   "scripts": {
     "build": "vite build && pnpm build:lib",
     "build:lib": "vite build --config vite.config.lib.ts",
-    "preview": "vite preview"
+    "preview": "vite preview --port 4170"
   },
   "keywords": [],
   "author": "",
