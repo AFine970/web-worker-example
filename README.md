@@ -43,7 +43,9 @@ pnpm preview
 docker pull afine907/classic-web-worker
 # run container
 docker run -d -p 3000:3000 afine907/classic-web-worker
+```
 
+```bash
 # pull classic-web-worker image
 docker pull afine907/module-web-worker
 # run container
