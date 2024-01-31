@@ -41,13 +41,15 @@ pnpm preview
 If you prefer to use Docker, you can pull the pre-built image from Docker Hub:
 
 ```bash
+# pull classic-web-worker image
 docker pull afine907/classic-web-worker
-docker pull afine907/module-web-worker
+# run container
+docker run -d -p 3000:3000 afine907/classic-web-worker
 ```
 
-To run the container, use the following command:
-
 ```bash
-docker run -d -p 3000:3000 afine907/classic-web-worker
+# pull classic-web-worker image
+docker pull afine907/module-web-worker
+# run container
 docker run -d -p 3100:3000 afine907/module-web-worker
 ```
