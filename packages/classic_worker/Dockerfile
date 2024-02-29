@@ -1,11 +1,14 @@
-# 使用官方的 Nginx 镜像作为基础镜像  
+# 使用官方的nginx镜像作为基础镜像  
 FROM nginx:stable-alpine  
   
-# 将 Vue Web App 的打包产物复制到 Nginx 的默认站点目录下  
-COPY dist/ /usr/share/nginx/html/  
+# 将当前目录中的nginx.conf复制到镜像中的nginx配置目录中  
+COPY nginx.conf /etc/nginx/nginx.conf  
+
+# 将web应用程序目录复制到镜像中的nginx网站目录中  
+COPY dist/ /usr/share/nginx/html  
   
-# 暴露 Nginx 的默认端口  
-EXPOSE 3000  
+# 暴露3000端口，以便可以通过HTTP访问应用程序  
+EXPOSE 3000
   
-# 启动 Nginx  
+# 在容器启动时启动nginx服务  
 CMD ["nginx", "-g", "daemon off;"]
