@@ -1,5 +1,7 @@
 # web-worker-example
 
+[zh](./README.md) | [en](./README_en.md)
+
 Web Worker 是前端性能优化的重要工具，它基于浏览器的多线程能力，通过在单独的线程中执行计算任务，避免主线程因大量数据计算而卡顿，从而提升用户体验。
 
 本仓库提供了两种类型的 Worker 示例：
@@ -32,20 +34,4 @@ pnpm install
 
 ```bash
 pnpm preview
-```
-
-## Docker 使用说明
-
-您可以使用 Docker 来快速部署和运行本示例：
-
-```bash
-# pull classic-web-worker image
-docker pull afine907/classic-web-worker
-# run container
-docker run -d -p 3000:3000 afine907/classic-web-worker
-
-# pull classic-web-worker image
-docker pull afine907/module-web-worker
-# run container
-docker run -d -p 3100:3000 afine907/module-web-worker
 ```

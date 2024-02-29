@@ -1,5 +1,7 @@
 # Web Worker Example
 
+[zh](./README.md) | [en](./README_en.md)
+
 Web Workers are a sophisticated tool for frontend performance optimization. They leverage the browser's capabilities to execute computation in a separate thread. This mitigates the issue of main thread stuttering caused by extensive data processing, thereby enhancing the user experience.
 
 This repository provides examples of two types of workers:
@@ -34,20 +36,4 @@ To preview and run the application, execute the following command:
 
 ```bash
 pnpm preview
-```
-
-## Using Docker
-
-If you prefer to use Docker, you can pull the pre-built image from Docker Hub:
-
-```bash
-docker pull afine907/classic-web-worker
-docker pull afine907/module-web-worker
-```
-
-To run the container, use the following command:
-
-```bash
-docker run -d -p 3000:3000 afine907/classic-web-worker
-docker run -d -p 3100:3000 afine907/module-web-worker
 ```
