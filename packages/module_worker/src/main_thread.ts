@@ -1,5 +1,8 @@
 function setupWebWorker() {
-  const worker = new Worker(new URL("worker", import.meta.url), { type: 'module' });
+  const isDev = import.meta.env.DEV;
+  const worker = isDev
+    ? new Worker("./worker.ts", { type: "module" })
+    : new Worker("./worker.js");
 
   // suppest async/await
   return (message: number) => {
